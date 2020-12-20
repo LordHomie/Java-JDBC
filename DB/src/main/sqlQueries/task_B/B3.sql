@@ -1,0 +1,1 @@
+SELECT UserLogs.HTTP_query as Website, COUNT(UserLogs.User_IP) as IP FROM UserLogs INNER JOIN UserData ON UserData.User_IP = UserLogs.User_IP WHERE UserData.Age < ? AND UserLogs.TimeStamp > DATEADD('DAY',-?, '2014-04-26 19:10:49') GROUP BY UserLogs.HTTP_query ORDER BY COUNT(UserLogs.User_IP) DESC LIMIT 0, 3;

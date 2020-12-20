@@ -1,0 +1,1 @@
+SELECT TOP (?) User_IP, Gender, Age, count(*) AS Occurrence FROM UserData group by User_IP, Gender, Age order by count(*) desc;

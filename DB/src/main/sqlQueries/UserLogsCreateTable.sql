@@ -1,0 +1,9 @@
+CREATE TABLE UserLogs
+(
+    User_IP VARCHAR(255) NOT NULL,
+    TimeStamp TIMESTAMP WITH TIME ZONE NOT NULL,
+    HTTP_query VARCHAR(255) NOT NULL,
+    WebPageSize INTEGER  NOT NULL,
+    HTTP_StatusCode INTEGER  NOT NULL,
+    Information VARCHAR(255) NOT NULL
+);
